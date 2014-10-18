@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@android:id/tabhost"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+         
+         <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_weight="0.0"
+            android:layout_height="wrap_content">
+        </TabWidget>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                   <LinearLayout 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center"
+                       android:layout_weight="1.0">
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/firstpage"
+                        android:src="@drawable/home_page_unpressed"/><!-- 可用imageview来解决button的像素不和的问题 -->
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="首页"
+                        />  
+                 </LinearLayout>
+                     <LinearLayout 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:orientation="vertical"
+                       android:layout_weight="1.0">
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tipspage"
+                        android:src="@drawable/tips_unpressed"/><!-- 可用imageview来解决button的像素不和的问题 -->
+                       <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="贴士"
+                        />  
+                   </LinearLayout>
+                   <LinearLayout 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center"
+                       android:layout_weight="1.0">
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/messagepage"
+                        android:layout_weight="1.0"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/send_message"/><!-- 可用imageview来解决button的像素不和的问题 -->
+                        
+                   </LinearLayout>
+                     <LinearLayout 
+                        android:gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="1.0">
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/strategypage"
+                        android:src="@drawable/strategy_unpressed"/><!-- 可用imageview来解决button的像素不和的问题 -->
+                       <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="攻略"
+                        />  
+                   </LinearLayout>
+                     <LinearLayout 
+                         android:gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_weight="1.0">
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userinfopage"
+                        android:src="@drawable/myinfo_unpressed"/><!-- 可用imageview来解决button的像素不和的问题 -->
+                         <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的"
+                        />  
+                   </LinearLayout>
+           </LinearLayout>
+    </LinearLayout>
+</TabHost>

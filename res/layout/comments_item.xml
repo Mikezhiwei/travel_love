@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:orientation="vertical">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leave_word_user_name"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="我"
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/leave_word_article"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:singleLine="false"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:text="你好，请问你你们组里面呢几个人呢?"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/leave_word_time"
+                    android:textColor="#000000"
+                    android:text="留言时间"/>
+                
+          </LinearLayout>
+         
+</LinearLayout>
